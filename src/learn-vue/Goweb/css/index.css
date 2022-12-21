@@ -1,0 +1,57 @@
+.top-nav{
+	background-color: red;
+}
+.bottombar{
+	top: 94%;
+	position: fixed;
+	width: 100%;
+	height: 6%;
+	background-color: gray;
+	text-align: center;
+}
+.bottomimg{
+	height: 40px;
+	width: 40px;
+	 
+}
+.draw-enter-active, .draw-leave-active {
+    transition: all 1s ease;
+}
+.draw-enter, .draw-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    height: 0;
+}
+.gradient-border {
+  --borderWidth: 5px;
+  background: #e3dcdd;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.bbox{
+	border: #07b39b solid 2px;
+}

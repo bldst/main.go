@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Goweb 曹稳龙</title>
+  </head>
+  <body>
+    <div id="app">
+
+      <h1>登陆成功</h1>
+      <h1>欢迎你</h1>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script src="./vue.js"></script>
+  <script>
+
+  	new Vue({
+  		el: '#app',
+  		data: {
+        msg:"",
+  			account: "",
+
+  		},
+  		computed: {
+  			reversedMessage() {
+  				return this.msg.split('').reverse().join('');
+  			}
+
+  		},
+  		methods: {
+  			showpsd() {
+  				console.log("1");
+  				console.log(this.psd);
+  			},
+
+
+  		},
+      mounted: function(){
+   
+      }
+  	})
+  </script>
+</html>
